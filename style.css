@@ -241,6 +241,10 @@ button {
   transition: 0.5s ease-in-out;
 }
 
+.word {
+  text-decoration: underline;
+}
+
 /* nav + */
 
 .box {
