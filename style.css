@@ -1,0 +1,356 @@
+@import "reset.css"; /* reset.css = 브라우저마다 다른 기본 값을 통일시켜주는 역할 */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* start-page */
+
+.start-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #131721;
+}
+
+.headline-second {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.title {
+  --c: #1095c1;
+  --h: 1.2em;
+  
+  line-height: var(--h);
+  background: 
+    linear-gradient(var(--c) 0 0) no-repeat 
+    calc(200% - var(--_p,0%)) 100%/200% var(--_p,.08em);
+  color: #0000;
+  overflow: hidden;
+  text-shadow: 
+    0 calc(-1*var(--_t,0em)) var(--c), 
+    0 calc(var(--h) - var(--_t,0em)) #fff;
+  transition: .3s var(--_s,0s), background-position .3s calc(.3s - var(--_s,0s));
+}
+
+.title:hover {
+  --_t: var(--h);
+  --_p: 100%;
+  --_s: .3s
+}
+
+.sub-title {
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 4px solid #1095c1;
+  color: #1095c1;
+}
+
+.box {
+  width: 20rem;
+  height: 8rem;
+  border: 17px solid tomato;
+  margin: 0 20px;
+}
+
+.box:hover {
+  border: 17px solid #1095c1;
+}
+
+.dev {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+/* nav */
+.nav {
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100vh;
+  padding: 100px 0;
+
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-name {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding: 20px 0;
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-line {
+  height: 0;
+  width: 65px;
+  border: 2px solid #1095c1;
+  margin-top: 10px;
+}
+
+.nav-pt {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-name:hover {
+  color: #1095c1;
+  font-weight: 500;
+}
+
+.nav-pt:hover {
+  color: #1095c1;
+  font-weight: 700;
+}
+
+.active {
+  color: #1095c1;
+  font-size: larger;
+  font-weight: 800;
+}
+
+/* contents */
+
+.contents {
+  height: 100vh;
+  background-color: white;
+}
+
+.contents a {
+  text-decoration: none;
+  color: tomato;
+}
+
+.image {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.image-text p {
+  text-align: center;
+  color: balck;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 120%;
+  text-shadow: 0 5px 15px rgb(0 0 0 / 100%);
+}
+
+.image-text span {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 120%;
+  text-shadow: 0 5px 15px rgb(0 0 0 / 100%);
+}
+
+.text {
+  padding-top: 10px;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 120%;
+}
+
+.text p:hover {
+  color: #1095c1;
+}
+
+.end-page {
+  background-color: black;
+  height: 150vh;
+}
+
+.end-title {
+  line-height: 120%;
+  padding-bottom: 50px;
+}
+
+input {
+  width: 55rem;
+  height: 8rem;
+  border: 17px solid #1095c1;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+ul {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+button {
+  background-color: black;
+  border: none;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+
+/* nav + */
+
+.box {
+  animation-duration: 1s;
+  animation-name: open;
+}
+
+@keyframes open {
+  from {
+    width: 0%;
+  }
+  to {
+    padding-left: 0%;
+    width: 33.5%;
+  }
+}
+
+/* footer */
+
+/*
+footer {
+  background-color: black;
+  color: white;
+  }
+
+.footer-first {
+  border-bottom: 1px solid white;
+  text-align: center;  
+}
+
+.footer-second {
+  border-bottom: 1px solid white;
+}
+
+.footer-second a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-second a:hover {
+  text-decoration: underline;
+}
+*/
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 65rem) /* 0~48rem 일 때 라는 뜻 */ {
+  .image-text p {
+    font-size: 2rem;
+  }
+  
+  .image-text span {
+    font-size: 1rem;
+  }
+  
+  .text {
+    font-size: 1.7rem;
+  }
+
+  .start-page {
+    font-size: 3rem;
+    height: 2rem;
+  }
+  
+  .sub-title {
+    font-size: 1.1rem;
+  }
+  
+  .box {
+    width: 5rem;
+    height: 3.5rem;
+    border: 0.5rem solid tomato;
+    margin: 0.7rem 0.3rem 0 0.3rem;
+  }
+  
+  .box:hover {
+    border: 0.5rem solid #1095c1;
+  }
+
+  input {
+    width: 30rem;
+    height: 6rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+    border: 12px solid #1095c1;
+  }
+  
+  ul {
+    font-size: 2rem;
+  }
+  
+  button {
+    background-color: black;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .box {
+    animation-duration: 1s;
+    animation-name: open;
+  }
+
+  @keyframes open {
+    from {
+      width: 0%;
+    }
+    to {
+      padding-left: 0%;
+      width: 21%;
+    }
+  }
+}
