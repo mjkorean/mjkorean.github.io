@@ -5,4 +5,3 @@ https://mjkorean.github.io
 - Bootstrap
 - Responsive Web Design
 - Javascript
-- React
