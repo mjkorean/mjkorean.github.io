@@ -3,5 +3,5 @@ https://mjkorean.github.io
 - HTML
 - CSS
 - Bootstrap
-- Responsive Web Design
 - Javascript
+- Responsive Web Design
