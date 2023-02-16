@@ -35,23 +35,22 @@ body {
 .title {
   --c: #1095c1;
   --h: 1.2em;
-  
+
   line-height: var(--h);
-  background: 
-    linear-gradient(var(--c) 0 0) no-repeat 
-    calc(200% - var(--_p,0%)) 100%/200% var(--_p,.08em);
+  background: linear-gradient(var(--c) 0 0) no-repeat calc(200% - var(--_p, 0%))
+    100%/200% var(--_p, 0.08em);
   color: #0000;
   overflow: hidden;
-  text-shadow: 
-    0 calc(-1*var(--_t,0em)) var(--c), 
-    0 calc(var(--h) - var(--_t,0em)) #fff;
-  transition: .3s var(--_s,0s), background-position .3s calc(.3s - var(--_s,0s));
+  text-shadow: 0 calc(-1 * var(--_t, 0em)) var(--c),
+    0 calc(var(--h) - var(--_t, 0em)) #fff;
+  transition: 0.3s var(--_s, 0s),
+    background-position 0.3s calc(0.3s - var(--_s, 0s));
 }
 
 .title:hover {
   --_t: var(--h);
   --_p: 100%;
-  --_s: .3s
+  --_s: 0.3s;
 }
 
 .sub-title {
@@ -295,11 +294,11 @@ footer {
   .image-text p {
     font-size: 2rem;
   }
-  
+
   .image-text span {
     font-size: 1rem;
   }
-  
+
   .text {
     font-size: 1.7rem;
   }
@@ -308,18 +307,18 @@ footer {
     font-size: 3rem;
     height: 2rem;
   }
-  
+
   .sub-title {
     font-size: 1.1rem;
   }
-  
+
   .box {
     width: 5rem;
     height: 3.5rem;
     border: 0.5rem solid tomato;
     margin: 0.7rem 0.3rem 0 0.3rem;
   }
-  
+
   .box:hover {
     border: 0.5rem solid #1095c1;
   }
@@ -331,18 +330,18 @@ footer {
     font-weight: 500;
     border: 12px solid #1095c1;
   }
-  
+
   ul {
     font-size: 2rem;
   }
-  
+
   button {
     background-color: black;
     border: none;
     font-size: 1.5rem;
     font-weight: 400;
   }
-  
+
   .box {
     animation-duration: 1s;
     animation-name: open;
