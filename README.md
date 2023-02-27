@@ -1,4 +1,4 @@
-# My Github Page
+# Self-Introduction Page
 https://mjkorean.github.io
 - HTML
 - CSS
