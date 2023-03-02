@@ -171,18 +171,9 @@ img {
 
 .image-text p {
   text-align: center;
-  color: balck;
+  color: white;
   font-size: 50px;
-  font-weight: 500;
-  line-height: 120%;
-  text-shadow: 0 5px 15px rgb(0 0 0 / 100%);
-}
-
-.image-text span {
-  text-align: center;
-  color: black;
-  font-size: 25px;
-  font-weight: 300;
+  font-weight: 1000;
   line-height: 120%;
   text-shadow: 0 5px 15px rgb(0 0 0 / 100%);
 }
