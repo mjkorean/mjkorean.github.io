@@ -1,4 +1,4 @@
-# My Front-End Development
+# My Front-End Project
 https://mjkorean.github.io
 - HTML
 - CSS
