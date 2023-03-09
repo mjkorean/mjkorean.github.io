@@ -202,7 +202,7 @@ section {
   padding: 5rem 0;
 }
 
-section:ntn-chile(2n) {
+section:nth-child(2n) {
   background-color: #f8f8f8;
 }
 
