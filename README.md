@@ -1,8 +1,7 @@
-# Self-Introduction Page
+# My Front-End Development
 https://mjkorean.github.io
 - HTML
 - CSS
 - Bootstrap
-- Javascript
-- jQuery
+- Vanilla Javascript
 - Responsive Web Design
