@@ -1,10 +1,11 @@
 /* 구글 폰트 적용 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 a,
@@ -29,7 +30,7 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 1rem;
+  padding: 0.1rem;
 }
 
 /* 웹 브라우저가 수직 방향으로 스크롤될때 헤더 영역에 스타일 적용 */
@@ -52,7 +53,7 @@ header.active {
 }
 
 button:hover {
-  color: lightcoral;
+  color: #1095c1;
 }
 
 header .container {
@@ -110,11 +111,10 @@ main h2 {
   font-size: 3.5rem;
   margin: 2rem 0;
   letter-spacing: 3px;
-  font-family: "Varela Round", sans-serif;
 }
 
 main h2:hover {
-  color: lightcoral;
+  color: #1095c1;
 }
 
 main p {
@@ -137,11 +137,12 @@ main button.download {
 /* 다운로드 버튼 호버 효과 */
 main button.download:hover {
   font-size: 1.2rem;
-  color: lightcoral;
-  border-color: lightcoral;
+  color: #1095c1;
+  border-color: #1095c1;
   text-decoration: none;
 }
 
+/* 메인 페이지 마우스 */
 main button.mouse {
   background-color: transparent;
   border: none;
@@ -162,7 +163,7 @@ main button.mouse {
   }
 
   50% {
-    bottom: 2rem;
+    bottom: 1.7rem;
   }
 
   100% {
@@ -172,8 +173,42 @@ main button.mouse {
 
 /* 마우스 버튼 호버 효과 */
 main button.mouse:hover {
-  color: lightcoral;
+  color: #1095c1;
   font-size: 2.5rem;
+}
+
+/* 화살표 아래방향 */
+.arrow-down {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  font-size: 2rem;
+  margin-top: 3rem;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: upDown 1s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/* 화살표 아래방향 애니메이션 효과 */
+@keyframes upDown {
+  0% {
+    bottom: 1rem;
+  }
+
+  50% {
+    bottom: 1.7rem;
+  }
+
+  100% {
+    bottom: 1rem;
+  }
+}
+
+/* 화살표 아래방향 호버 효과 */
+.arrow-down:hover {
+  color: #1095c1;
 }
 
 main h2 span::after {
@@ -198,7 +233,6 @@ main h2 span::after {
 
 /* about me 시작 */
 section {
-  font-family: "poppins", sans-serif;
   padding: 5rem 0;
 }
 
@@ -212,7 +246,7 @@ section .title {
 
 section .title h4 {
   font-size: 1.35rem;
-  color: #ed4848;
+  color: lightcoral;
   position: relative;
 }
 
@@ -282,12 +316,17 @@ section .do-me::after {
 
 /* 사각형 크기와 간격, 내부 여백 설정 */
 section .do-me .do-inner {
-  background-color: #fff;
+  background-color: white;
   width: 30%;
   padding: 2rem;
   float: left;
   margin-right: 5%;
   cursor: pointer;
+}
+
+/* features 사각형 보더 설정 */
+.strength-box {
+  border: 1px solid lightcoral;
 }
 
 /* 마지막 사각형의 외부 여백 설정 */
@@ -339,6 +378,10 @@ section.portfolio::after {
   clear: both;
 }
 
+.portfolio-inner {
+  text-align: center;
+}
+
 /* portfolio-inner 사각형 꾸미기 */
 section.portfolio .portfolio-inner {
   width: 30%;
@@ -363,7 +406,7 @@ section.portfolio .portfolio-inner img {
 
 /* strong 태그 색상과 간격 */
 section.portfolio .portfolio-inner strong {
-  color: lightcoral;
+  color: #1095c1;
   margin: 0.5rem 0;
   display: block;
 }
@@ -444,8 +487,8 @@ section.contact .contact-me .right .form-group input {
 
 /* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */
 section.contact .contact-me .right .form-group input:focus {
-  border: 1px solid lightcoral;
-  box-shadow: 0 0 10px lightcoral;
+  border: 1px solid #1095c1;
+  box-shadow: 0 0 10px #1095c1;
 }
 
 /* textarea 요소 꾸미기 */
@@ -460,15 +503,15 @@ section.contact .contact-me .right .form-group textarea {
 /* textarea 요소에 커서가 활성화가 되면 파란색 테두리와 그림자 효과 추가 */
 section.contact .contact-me .right .form-group textarea:focus {
   outline: none;
-  border: 1px solid lightcoral;
-  box-shadow: 0 0 10px lightcoral;
+  border: 1px solid #1095c1;
+  box-shadow: 0 0 10px #1095c1;
 }
 
 /* 버튼 요소 꾸미기 */
 section.contact .contact-me .right button {
   width: 100%;
   padding: 1rem;
-  background-color: lightcoral;
+  background-color: #1095c1;
   border: none;
   color: white;
 }
