@@ -33,6 +33,8 @@ header {
 }
 
 /* 웹 브라우저가 수직 방향으로 스크롤될때 헤더 영역에 스타일 적용 */
+/* 헤더 영역의 배경이 검은색으로 지정되고,
+fadeIn 애니메이션을 적용해 투명도가 0에서 1로 1초간 변경됨 */
 header.active {
   background-color: rgba(0, 0, 0);
   animation: fadeIn 0.5s ease-in-out;
@@ -471,7 +473,30 @@ section.contact .contact-me .right button {
   color: white;
 }
 
+/* footer 시작 */
+footer {
+  color: white;
+  background-color: black;
+}
+
+.footer-first {
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.footer-second {
+  text-align: center;
+}
+
+.footer-second a {
+  color: white;
+  text-decoration: none;
+}
+
 /* 미디어 쿼리를 이용한 반응형 웹 설정 */
+/* 미디어 쿼리는 스크롤 바의 너비를 미포함(18px)
+크롬 브라우저 기준, 기본 가로 너비(1140px)에 스크롤 바 너비(18px)를 합한
+1158px까지 넓혀야 정상적으로 보임 */
 
 /* 설정에 활용한 기준 너비
 1140px
@@ -481,7 +506,8 @@ section.contact .contact-me .right button {
 400px */
 
 /* 화면 너비가 1140px 이하일 때 */
-/* 가장 넓은 기준 너비 */
+/* 가장 넓은 기준 너비
+기준 해상도를 1140px부터 시작 */
 @media screen and (max-width: 1140px) {
   /* 메인 영역 container 기준 너비 변경 */
   main .container {
