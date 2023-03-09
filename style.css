@@ -1,0 +1,642 @@
+/* 구글 폰트 적용 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  color: white;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* 웹 브라우저가 수직 방향으로 스크롤될때 헤더 영역에 스타일 적용 */
+header.active {
+  background-color: rgba(0, 0, 0);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 헤더 영역 애니메이션 구현 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+button:hover {
+  color: lightcoral;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  padding: 10px;
+}
+
+header button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+
+header h1 button {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header nav ul li button {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* main 시작 */
+
+main {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/success.jpg") center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main h4 {
+  font-size: 2rem;
+}
+
+main h2 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  letter-spacing: 3px;
+  font-family: "Varela Round", sans-serif;
+}
+
+main h2:hover {
+  color: lightcoral;
+}
+
+main p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+main button.download {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 다운로드 버튼 호버 효과 */
+main button.download:hover {
+  font-size: 1.2rem;
+  color: lightcoral;
+  border-color: lightcoral;
+  text-decoration: none;
+}
+
+main button.mouse {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: upDown 1s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/* 마우스 버튼 애니메이션 효과 */
+@keyframes upDown {
+  0% {
+    bottom: 1rem;
+  }
+
+  50% {
+    bottom: 2rem;
+  }
+
+  100% {
+    bottom: 1rem;
+  }
+}
+
+/* 마우스 버튼 호버 효과 */
+main button.mouse:hover {
+  color: lightcoral;
+  font-size: 2.5rem;
+}
+
+main h2 span::after {
+  content: "";
+  height: 40px;
+  width: 3px;
+  background-color: #fff;
+  display: inline-block;
+  animation: blink 0.7s ease-in-out infinite;
+}
+
+/* 커서 애니메이션 효과 */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* about me 시작 */
+section {
+  font-family: "poppins", sans-serif;
+  padding: 5rem 0;
+}
+
+section:ntn-chile(2n) {
+  background-color: #f8f8f8;
+}
+
+section .title {
+  margin-bottom: 3rem;
+}
+
+section .title h4 {
+  font-size: 1.35rem;
+  color: #ed4848;
+  position: relative;
+}
+
+section .title h2 {
+  font-size: 3.5rem;
+}
+
+section .title p {
+  font-size: 1.15rem;
+}
+
+/* float 속성 해제 */
+section .about-self::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* 본문 너비 절반 지정 & 왼쪽 배치 */
+section .about-self .left {
+  width: 50%;
+  float: left;
+}
+
+/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
+section .about-self .left img {
+  max-width: 100%;
+}
+
+/* 본문 너비 절반 지정 & 오른쪽 배치 */
+section .about-self .right {
+  width: 50%;
+  float: left;
+  padding: 0 2rem;
+}
+
+/* 본문 오른쪽 h3 태그의 글자 크기와 여백 지정 */
+section .about-self .right h3 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+/* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
+section .about-self .right h3 strong {
+  color: #1095c1;
+}
+
+/* 본문 오른쪽 p 태그의 크기와 여백 지정 */
+section .about-self .right p {
+  font-size: 1.15rem;
+  margin: 1rem 0;
+}
+
+/* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
+section .about-self .right .social a {
+  font-size: 2.5rem;
+  margin-right: 0.2rem;
+}
+
+/* features, strength 시작 */
+/* float 속성 해제*/
+section .do-me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 사각형 크기와 간격, 내부 여백 설정 */
+section .do-me .do-inner {
+  background-color: #fff;
+  width: 30%;
+  padding: 2rem;
+  float: left;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+/* 마지막 사각형의 외부 여백 설정 */
+section .do-me .do-inner:last-child {
+  margin-right: 0;
+}
+
+/* 아이콘 폰트 크기와 색상 */
+section .do-me .do-inner .icon i {
+  font-size: 2.5rem;
+  color: lightcoral;
+}
+
+/* HTML5, CSS3, BootStrap v5.0 텍스트 크기와 간격 */
+section .do-me .do-inner .content h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* 사각형 텍스트 크기 */
+section .do-me .do-inner .content p {
+  font-size: 1.15rem;
+}
+
+/* do-inner 클래스에 마우스를 올리면 배경색과 텍스트 색상 변경 */
+section .do-me .do-inner:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+/* do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경 */
+section .do-me .do-inner:hover i {
+  color: white;
+}
+
+/* bg 시작 */
+.bg {
+  background: url("./images/will.jpeg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+
+/* portfolio 시작 */
+/* clear 속성으로 float 속성값 해제 */
+section.portfolio::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* portfolio-inner 사각형 꾸미기 */
+section.portfolio .portfolio-inner {
+  width: 30%;
+  margin-right: 5%;
+  padding: 1rem 1rem 1.5rem 1rem;
+  float: left;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  margin-bottom: 3rem;
+}
+
+/* 3번째마다 margin-right 0 적용 */
+section.portfolio .portfolio-inner:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* 이미지 크기가 부모 요소를 넘지 않도록 100%로 지정 */
+section.portfolio .portfolio-inner img {
+  width: 100%;
+  display: block;
+}
+
+/* strong 태그 색상과 간격 */
+section.portfolio .portfolio-inner strong {
+  color: lightcoral;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+/* h3 태그 색상과 간격 */
+section.portfolio .portfolio-inner h3 {
+  font-size: 1.75rem;
+}
+
+/* contact 시작 */
+section.contact .contact-me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section.contact .contact-me .left {
+  width: 30%;
+  float: left;
+}
+
+section.contact .contact-me .right {
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+}
+
+section.contact .contact-me .left .card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+section.contact .contact-me .left .card .icon i {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+section.contact .contact-me .right {
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+/* form 시작 */
+/* form-group 사이 간격 지정 */
+section.contact .contact-me .right .form-group {
+  margin-bottom: 1.25rem;
+}
+
+/* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
+section.contact .contact-me .right .form-group label {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.icon {
+  margin: 10px;
+}
+
+/* input 요소 꾸미기 */
+section.contact .contact-me .right .form-group input {
+  padding: 0.625rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */
+section.contact .contact-me .right .form-group input:focus {
+  border: 1px solid lightcoral;
+  box-shadow: 0 0 10px lightcoral;
+}
+
+/* textarea 요소 꾸미기 */
+section.contact .contact-me .right .form-group textarea {
+  height: 300px;
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* textarea 요소에 커서가 활성화가 되면 파란색 테두리와 그림자 효과 추가 */
+section.contact .contact-me .right .form-group textarea:focus {
+  outline: none;
+  border: 1px solid lightcoral;
+  box-shadow: 0 0 10px lightcoral;
+}
+
+/* 버튼 요소 꾸미기 */
+section.contact .contact-me .right button {
+  width: 100%;
+  padding: 1rem;
+  background-color: lightcoral;
+  border: none;
+  color: white;
+}
+
+/* 미디어 쿼리를 이용한 반응형 웹 설정 */
+
+/* 설정에 활용한 기준 너비
+1140px
+992px
+768px
+576px
+400px */
+
+/* 화면 너비가 1140px 이하일 때 */
+/* 가장 넓은 기준 너비 */
+@media screen and (max-width: 1140px) {
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container {
+    width: 992px;
+    /* 1140px -> 992px */
+  }
+
+  /* 섹션 영역 container 기준 너비 변경 - 2단으로 처리하기 위한 적정 너비 */
+  section .container {
+    width: 600px;
+    /* 1140px -> 600px */
+  }
+
+  /* About Me 영역 왼쪽 너비 50% -> 100% 변경 */
+  section .about-self .left {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  /* About Me 영역 오른쪽 너비 50% -> 100% 변경 */
+  section .about-self .right {
+    width: 100%;
+    padding: 0;
+  }
+
+  section .do-me .do-inner {
+    width: 48%;
+    /* 본문 사각형 너비 30% -> 48% 변경 */
+    margin-bottom: 1.5rem;
+    /* 본문 사각형 사이 간격 지정 */
+    margin-right: 0;
+    /* 외부 여백 초기화 */
+  }
+
+  section .do-me .do-inner:nth-child(2n + 1) {
+    margin-right: 4%;
+    /* 1, 3, 5...번째 본문 사각형에 margin-right 4% 적용 */
+  }
+
+  section .portfolio-me .portfolio-inner {
+    width: 48%;
+    /* 본문 사각형 너비 30% -> 48% 변경 */
+    margin-right: 0;
+    /* 외부 여백 초기화 */
+  }
+
+  section .portfolio-me .portfolio-inner:nth-child(2n + 1) {
+    margin-right: 4%;
+    /* 1, 3, 5...번째 본문 사각형에 margin-right 4% 적용 */
+  }
+
+  section.contact .contact-me .left {
+    width: 100%;
+    /* 너비 변경 30% -> 100% */
+  }
+
+  section.contact .contact-me .right {
+    width: 100%;
+    /* 너비 변경 65% -> 100% */
+    margin-left: 0;
+    /* 외부 여백 초기화 */
+  }
+}
+
+/* 화면 너비가 992px 이하일 때 */
+/* 해상도가 992px 이하일때, 디자인적으로 레이아웃이 달라지는 부분에 대해서만 설정
+container 클래스 너비와 PortFolio 영역의 본문 너비 변경
+그 외는 위에 설정한 부분 자동 적용 */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container {
+    width: 768px;
+    /* 992px -> 768px */
+  }
+
+  /* PortFolio 영역 본문 사각형 너비 변경 */
+  section .portfolio-me .portfolio-inner {
+    width: 100%;
+    /* 48% -> 100% 변경 */
+  }
+}
+
+/* 화면 너비가 768px 이하일 때 */
+/* features, strength 영역이 기준 너비인 768px 이하로 줄어들면
+본문 너비가 100%로 변경되어 모든 컨턴츠가 수직 방향으로 한 줄로 배치 */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container {
+    width: 576px;
+    /* 768px -> 576px */
+  }
+
+  section .container {
+    width: 400px;
+    /* 600px -> 400px */
+  }
+
+  section .do-me .do-inner {
+    width: 100%;
+    /* 48% -> 100% */
+    margin-right: 0;
+    /* 외부 여백 초기화 */
+  }
+}
+
+/* 화면 너비가 576px 이하일 때 */
+/* container 클래스의 기준 너비 변경만 적용 */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+
+  main .container {
+    width: 400px;
+    /* 576px -> 400px */
+  }
+
+  section .container {
+    width: 360px;
+    /* 400px -> 360px */
+  }
+}
+
+/* 화면 너비가 400px 이하일 때 */
+/* container 클래스의 기분 너비 변경 시, 메인 영역의 글자 비율이 줄어들어도
+현재 해상도에서는 큰 편이어서 font-size 속성을 기존보다 조금 작게 재설정 */
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 11px;
+  }
+
+  main .container {
+    width: 320px;
+    /* 400px -> 320px */
+  }
+
+  section .container {
+    width: 320px;
+    /* 360px -> 320px */
+  }
+
+  main h4 {
+    font-size: 1.5rem;
+  }
+
+  section .title h2 {
+    font-size: 3rem;
+    /* 3.5rem -> 3rem */
+  }
+}
