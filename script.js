@@ -16,16 +16,19 @@
 (function () {
   // 즉시 실행 함수 형태로 코드를 감싸주어 작성한 코드를 정리
   // 텍스트를 작성할 span 요소 노드 가져오기
-  const spanEl = document.querySelector("main h2 span");
+  const spanEl = document.querySelector("main h1 span");
 
   // 작성할 문장을 배열로 정의해 txtArr 변수에 할당(화면에 표시할 문장 배열)
   const txtArr = [
-    "a STRONG-WILLED PERSON.",
-    "BUT ALSO",
-    "a FRONT-END DEVELOPER.",
-    "WHAT'S MORE?",
-    "BULLDOZER-LIKE.",
-    "READY TO GO!",
+    "👋HELLO!🤠",
+    "💻I'M A FRONT-END DEVELOPER.👨‍💻",
+    "😮BUT ALSO🤔",
+    "💥I'M A STRONG-WILLED PERSON.❤️‍🔥",
+    "😮WHAT'S MORE?🤔",
+    "I'M BULLDOZER-LIKE.🤪💪",
+    "AND DETERMINED TO SUCCEED.🙏😎",
+    "I'M READY TO GO!😁",
+    "👍SEE YOU AROUND!🖖"
   ];
 
   // 인덱스 초기값도 index 변수에 할당해 배열의 첫번째 요소에 접근히게 함(배열의 인덱스 번호 0번)
@@ -47,9 +50,9 @@
       // 변수에 할당괸 배열의 길이가 0인지 확인 후, 0이 아니라면 반복 출력해줌
       setTimeout(writeTxt, Math.floor(Math.random() * 100)); // 실행 시간 무작위 설정
     } else {
-      // else문 실행 = 배열의 길이가 0이 됨 = 배열의 모든 텍스트 출력 완료 =  2.5초 뒤 텍스트 삭제
+      // else문 실행 = 배열의 길이가 0이 됨 = 배열의 모든 텍스트 출력 완료 =  1.5초 뒤 텍스트 삭제
       currentTxt = spanEl.textContent.split("");
-      setTimeout(deleteTxt, 2500);
+      setTimeout(deleteTxt, 1500);
     }
   }
 
@@ -97,9 +100,9 @@ const animationMove = function (selector) {
   // ② 현재 웹 브라우저의 스크롤 정보(y 값)
   const browserScrollY = window.pageYOffset;
   // ③ 이동할 대상의 위치(y 값)
-  const targetScorllY = targetEl.getBoundingClientRect().top + browserScrollY;
+  const targetScrollY = targetEl.getBoundingClientRect().top + browserScrollY;
   // ④ 스크롤 이동
-  window.scrollTo({ top: targetScorllY, behavior: "smooth" });
+  window.scrollTo({ top: targetScrollY, behavior: "smooth" });
 };
 
 // 스크롤 이벤트 연결하기
