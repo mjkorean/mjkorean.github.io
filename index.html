@@ -1,534 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Front-End Project</title>
-    <script
-      src="https://kit.fontawesome.com/e4855e3cf5.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <h1>
-          <button data-animation-scroll="true" data-target="#main">
-            My Project
-          </button>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <button data-animation-scroll="true" data-target="#about">
-                About
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#features">
-                Features
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#strength">
-                Strength
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#portfolio">
-                Portfolio
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#contact">
-                Contact
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Front-End Project</title>
+  <script src="https://kit.fontawesome.com/e4855e3cf5.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <main id="main">
-      <div class="container">
-        <h4>Welcome!</h4>
-        <h2>I'm <span></span></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          dolor quas nulla unde ea officiis?
-        </p>
-        <button
-          class="download"
-          onclick=" window.open('https://www.rocketpunch.com/@mjkorean','_blank')"
-        >
-          My Resume
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <button data-animation-scroll="true" data-target="#main">
+          My Project
         </button>
-        <button class="mouse" data-animation-scroll="true" data-target="#about">
-          <i class="fa-solid fa-computer-mouse"></i>
-        </button>
-      </div>
-    </main>
-    <section id="about" class="about">
-      <div class="container">
-        <div class="title">
-          <h2>A Little About Me</h2>
-          <h4>Who Am I?</h4>
-        </div>
-        <div class="about-self">
-          <div class="left">
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="4"
-                  aria-label="Slide 5"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="5"
-                  aria-label="Slide 6"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="6"
-                  aria-label="Slide 7"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="7"
-                  aria-label="Slide 8"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="8"
-                  aria-label="Slide 9"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="9"
-                  aria-label="Slide 10"
-                ></button>
-              </div>
-              <div
-                id="carouselExampleInterval"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="1500">
-                    <img
-                      src="images/mock1.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/mock2.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/mock3.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/mock4.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/mock5.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/mock6.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/bulldozer.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/success.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/will.jpeg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1500">
-                    <img
-                      src="images/jung.PNG"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleRide"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleRide"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <h3>Hello! <strong>I'm M.J.</strong></h3>
-            <p>
-              <strong>
-                I'm a Front-End Developer but also a Bulldozer-like person based
-                in Seoul, South Korea. I love what I do! It is my calling that I
-                have been waiting for my entire life.
-              </strong>
-            </p>
-            <p>
-              I literally decided to start my career in this field because I
-              love my job that matters the most. Thats's all.
-            </p>
-            <p>
-              I love doing computer stuffs all the time since my childhood years
-              and still so much fun doing my job. I think I'm blessed!
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,
-              omnis quibusdam.
-            </p>
-            <div class="social">
-              <a href="https://github.com/mjkorean" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.rocketpunch.com/@mjkorean" target="blank">
-                <i class="fa-solid fa-rocket"></i>
-              </a>
-              <a href="https://mjkorean.tistory.com/" target="_blank">
-                <i class="fa-solid fa-book"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="arrow-down"
-        data-animation-scroll="true"
-        data-target="#features"
-      >
-        <i class="fa-solid fa-arrow-down"></i>
-      </button>
-    </section>
-    <section id="features" class="do">
-      <div class="container">
-        <div class="title">
-          <h2>Features</h2>
-          <h4>I know What I Do.</h4>
-        </div>
-        <div class="do-me">
-          <div class="do-inner">
-            <div class="icon">
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div class="content">
-              <h3>HTML / CSS</h3>
-              <p>언어 수준에 대한 간략한 설명</p>
-              <progress id="file1" value="80" max="100"></progress> 80%
-            </div>
-          </div>
-          <div class="do-inner">
-            <div class="icon">
-              <i class="fa-brands fa-square-js"></i>
-            </div>
-            <div class="content">
-              <h3>JavaScript</h3>
-              <p>언어 수준에 대한 간략한 설명</p>
-              <progress id="file2" value="50" max="100"></progress> 50%
-            </div>
-          </div>
-          <div class="do-inner">
-            <div class="icon">
-              <i class="fa-brands fa-vuejs"></i>
-            </div>
-            <div class="content">
-              <h3>Vue.js</h3>
-              <p>언어 수준에 대한 간략한 설명</p>
-              <progress id="file3" value="0" max="100"></progress> 0%
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="arrow-down"
-        data-animation-scroll="true"
-        data-target="#strength"
-      >
-        <i class="fa-solid fa-arrow-down"></i>
-      </button>
-    </section>
-    <section id="strength" class="do">
-      <div class="container">
-        <div class="title">
-          <h2>Strength</h2>
-          <h4>I'll Show You What I Got.</h4>
-        </div>
-        <div class="do-me">
-          <div class="do-inner strength-box">
-            <div class="icon">
-              <i class="fa-solid fa-thumbs-up"></i>
-            </div>
-            <div class="content">
-              <h3>Patience</h3>
-              <p>Patience is a virtue. That's one of my mottos.</p>
-            </div>
-          </div>
-          <div class="do-inner strength-box">
-            <div class="icon">
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="content">
-              <h3>Courage</h3>
-              <p>There's No Courage Without Fear. That's my life saver.</p>
-            </div>
-          </div>
-          <div class="do-inner strength-box">
-            <div class="icon">
-              <i class="fa-solid fa-globe"></i>
-            </div>
-            <div class="content">
-              <h3>English</h3>
-              <p>
-                English is a mother language for developers. What do you say?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="arrow-down"
-        data-animation-scroll="true"
-        data-target="#portfolio"
-      >
-        <i class="fa-solid fa-arrow-down"></i>
-      </button>
-    </section>
-    <div class="bg"></div>
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="title">
-          <h2>PortFolio</h2>
-          <h4>Top-notch Performance done.</h4>
-        </div>
-        <div class="portfolio-me">
-          <div class="portfolio-inner">
-            <img src="images/mock1.png" alt="샘플이미지" />
-            <strong>BRANDING</strong>
-            <h3>Package Design</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img src="images/mock2.png" alt="샘플이미지" />
-            <strong>DEVELOPMENT</strong>
-            <h3>Tablet App Dev</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img src="images/mock3.png" alt="샘플이미지" />
-            <strong>MARKETING</strong>
-            <h3>Coka Cola Viral</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img src="images/mock4.png" alt="샘플이미지" />
-            <strong>APP</strong>
-            <h3>FaceBook Clone</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img src="images/mock5.png" alt="샘플이미지" />
-            <strong>APP</strong>
-            <h3>Netflix Clone</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img src="images/mock6.png" alt="샘플이미지" />
-            <strong>WEB</strong>
-            <h3>FirmBee Web</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="title">
-          <h2>Contact</h2>
-          <h4>Feel free to get in touch with me. I won't bite!</h4>
-        </div>
-        <div class="contact-me">
-          <div class="left">
-            <div class="card">
-              <div class="icon">
-                <i class="fa-solid fa-mobile"></i>
-              </div>
-              <div class="info-text">
-                <h3>Mobile Phone</h3>
-                <p>010-0000-0000</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="icon">
-                <i class="fa-solid fa-paper-plane"></i>
-              </div>
-              <div class="info-text">
-                <h3>Email</h3>
-                <p>sociablejohnny@gmail.com</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="info-text">
-                <h3>Address</h3>
-                <p>Seoul, South Korea</p>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <form action="#">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" />
-              </div>
-              <div class="form-group">
-                <label for="msg">Message</label>
-                <textarea id="msg"></textarea>
-              </div>
-              <button>Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <button data-animation-scroll="true" data-target="#about">
+              About
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#features">
+              Features
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#strength">
+              Strength
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#portfolio">
+              Portfolio
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#contact">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-      <div class="container">
-        <div class="pt-4 pb-4 footer-first"></div>
-        <div class="row pt-4 pb-4 footer-second">
-          <div class="col">
-            <a href="https://github.com/mjkorean" target="_blank">Github</a>
+  <main id="main">
+    <div class="container">
+      <h4>Welcome!</h4>
+      <h2>I'm <span></span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        dolor quas nulla unde ea officiis?
+      </p>
+      <button class="download" onclick=" window.open('https://www.rocketpunch.com/@mjkorean','_blank')">
+        My Resume
+      </button>
+      <button class="mouse" data-animation-scroll="true" data-target="#about">
+        <i class="fa-solid fa-computer-mouse"></i>
+      </button>
+    </div>
+  </main>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="title">
+        <h2>A Little About Me</h2>
+        <h4>Who Am I?</h4>
+      </div>
+      <div class="about-self">
+        <div class="left">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="images/mock1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/mock2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/mock3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/mock4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/mock5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/mock6.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/will.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/success.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/jung.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="images/bulldozer.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col">
-            <a href="mailto:sociablejohnny@gmail.com">Email</a>
-          </div>
-          <div class="col">
-            <a href="https://www.rocketpunch.com/@mjkorean" target="_blank"
-              >Resume</a
-            >
-          </div>
-          <div class="col">
-            <a
-              href="#main"
-              title="Return To Top"
-              class="fa-solid fa-arrow-up"
-            ></a>
+        </div>
+        <div class="right">
+          <h3>Hello! <strong>I'm M.J.</strong></h3>
+          <p>
+            <strong>
+              I'm a Front-End Developer but also a Bulldozer-like person based
+              in Seoul, South Korea. I love what I do! It is my calling that I
+              have been waiting for my entire life.
+            </strong>
+          </p>
+          <p>
+            I literally decided to start my career in this field because I
+            love my job that matters the most. Thats's all.
+          </p>
+          <p>
+            I love doing computer stuffs all the time since my childhood years
+            and still so much fun doing my job. I think I'm blessed!
+          </p>
+          <p>
+            Lorem, ipsum.
+          </p>
+          <div class="social">
+            <a href="https://github.com/mjkorean" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.rocketpunch.com/@mjkorean" target="blank">
+              <i class="fa-solid fa-rocket"></i>
+            </a>
+            <a href="https://mjkorean.tistory.com/" target="_blank">
+              <i class="fa-solid fa-book"></i>
+            </a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <button class="arrow-down" data-animation-scroll="true" data-target="#features">
+      <i class="fa-solid fa-arrow-down"></i>
+    </button>
+  </section>
+  <section id="features" class="do">
+    <div class="container">
+      <div class="title">
+        <h2>Features</h2>
+        <h4>I know What I Do.</h4>
+      </div>
+      <div class="do-me">
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="content">
+            <h3>HTML / CSS</h3>
+            <p>언어 수준에 대한 간략한 설명</p>
+            <progress id="file1" value="80" max="100"></progress> 80%
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="content">
+            <h3>JavaScript</h3>
+            <p>언어 수준에 대한 간략한 설명</p>
+            <progress id="file2" value="50" max="100"></progress> 50%
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-brands fa-vuejs"></i>
+          </div>
+          <div class="content">
+            <h3>Vue.js</h3>
+            <p>언어 수준에 대한 간략한 설명</p>
+            <progress id="file3" value="0" max="100"></progress> 0%
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="arrow-down" data-animation-scroll="true" data-target="#strength">
+      <i class="fa-solid fa-arrow-down"></i>
+    </button>
+  </section>
+  <section id="strength" class="do">
+    <div class="container">
+      <div class="title">
+        <h2>Strength</h2>
+        <h4>I'll Show You What I Got.</h4>
+      </div>
+      <div class="do-me">
+        <div class="do-inner strength-box">
+          <div class="icon">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div class="content">
+            <h3>Patience</h3>
+            <p>Patience is a virtue. That's one of my mottos.</p>
+          </div>
+        </div>
+        <div class="do-inner strength-box">
+          <div class="icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="content">
+            <h3>Courage</h3>
+            <p>There's No Courage Without Fear. That's my life saver.</p>
+          </div>
+        </div>
+        <div class="do-inner strength-box">
+          <div class="icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="content">
+            <h3>English</h3>
+            <p>
+              English is a mother language for developers. What do you say?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="arrow-down" data-animation-scroll="true" data-target="#portfolio">
+      <i class="fa-solid fa-arrow-down"></i>
+    </button>
+  </section>
+  <div class="bg"></div>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="title">
+        <h2>PortFolio</h2>
+        <h4>Top-notch Performance done.</h4>
+      </div>
+      <div class="portfolio-me">
+        <div class="portfolio-inner">
+          <img src="images/mock1.png" alt="샘플이미지" />
+          <strong>BRANDING</strong>
+          <h3>Package Design</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock2.png" alt="샘플이미지" />
+          <strong>DEVELOPMENT</strong>
+          <h3>Tablet App Dev</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock3.png" alt="샘플이미지" />
+          <strong>MARKETING</strong>
+          <h3>Coka Cola Viral</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock4.png" alt="샘플이미지" />
+          <strong>APP</strong>
+          <h3>FaceBook Clone</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock5.png" alt="샘플이미지" />
+          <strong>APP</strong>
+          <h3>Netflix Clone</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock6.png" alt="샘플이미지" />
+          <strong>WEB</strong>
+          <h3>FirmBee Web</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="title">
+        <h2>Contact</h2>
+        <h4>Feel free to get in touch with me. I won't bite!</h4>
+      </div>
+      <div class="contact-me">
+        <div class="left">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-mobile"></i>
+            </div>
+            <div class="info-text">
+              <h3>Mobile Phone</h3>
+              <p>010-0000-0000</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div class="info-text">
+              <h3>Email</h3>
+              <p>sociablejohnny@gmail.com</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info-text">
+              <h3>Address</h3>
+              <p>Seoul, South Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="#">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="msg">Message</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <div class="container">
+      <div class="pt-4 pb-4 footer-first"></div>
+      <div class="row pt-4 pb-4 footer-second">
+        <div class="col">
+          <a href="https://github.com/mjkorean" target="_blank">Github</a>
+        </div>
+        <div class="col">
+          <a href="mailto:sociablejohnny@gmail.com">Email</a>
+        </div>
+        <div class="col">
+          <a href="https://www.rocketpunch.com/@mjkorean" target="_blank">Resume</a>
+        </div>
+        <div class="col">
+          <a href="#main" title="Return To Top" class="fa-solid fa-arrow-up"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
 
 <!-- 
   배경사진 변경
   소개사진 변경
-  스트렝스 카드 호버 효과 + 클릭 시 모달창 + 내용 입력
+  스트렝스 카드 호버 효과 + 다른 페이지 이동 + 다른 페이지 추가 준비
   포트폴리오 카드 클릭시 다른 페이지 연결 + 호버 효과 적용
 -->
