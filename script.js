@@ -23,11 +23,12 @@
     "👋HELLO!🤠",
     "💻I'M A FRONT-END DEVELOPER.👨‍💻",
     "😮BUT ALSO🤔",
-    "💥I'M A STRONG-WILLED PERSON.❤️‍🔥",
+    "💥I'M STRONG-WILLED.💖",
     "😮WHAT'S MORE?🤔",
-    "I'M BULLDOZER-LIKE.🤪💪",
-    "AND DETERMINED TO SUCCEED.🙏😎",
-    "I'M READY TO GO!😁",
+    "🤪I'M BULLDOZER-LIKE.💪",
+    "I GO MY ALL IN TO MAKE IT.🏆😎",
+    "🙏WHATEVER IT TAKES.🙏",
+    "✨I'M READY TO GO!😁",
     "👍SEE YOU AROUND!🖖"
   ];
 
